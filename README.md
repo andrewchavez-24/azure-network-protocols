@@ -85,3 +85,28 @@ Observe ping requests and replies within WireShark
 <p>
 <img src="https://github.com/user-attachments/assets/e09d325e-5021-4d76-95f2-ed3e10a3c0fc" height="80%" width="80%"/>
 </p>
+
+<br>
+<h3>Configuring a Firewall [Network Security Group]</h3>
+<p>
+Initiate a perpetual/non-stop ping from your Windows 10 VM to your Ubuntu VM by typing "ping (IP Address) -t" in powershell.
+</p>
+<p>
+<img src="https://github.com/user-attachments/assets/647467ba-3ff8-4544-bbb7-a2ed74bfe080" height="80%" width="80%"/>
+</p>
+
+<br>
+<p><b>Open the Network Security Group your Ubuntu VM is using and disable incoming (inbound) ICMP traffic.</b></p>
+<p>Go to virtual machines in Azure, click linux-vm, click the Networking drop down, click Network settings, then click the link under Network security group. Select the Settings dropdown, click Inbound security rules, click +Add, put an asterick in the Destination port ranges, select ICMPv4 protocol, select Deny Action, set priority to 290, then click Add.
+</p>
+<p>
+<img src="https://github.com/user-attachments/assets/b95b0572-bacf-41fe-8185-6c4e1c6b2ecd" height="80%" width="80%"/>
+</p>
+
+<br>
+<p>Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity
+</p>
+<p>
+<img src="https://github.com/user-attachments/assets/b95b0572-bacf-41fe-8185-6c4e1c6b2ecd" height="80%" width="80%"/>
+</p>
+
