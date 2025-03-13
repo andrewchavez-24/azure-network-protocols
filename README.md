@@ -107,6 +107,6 @@ Initiate a perpetual/non-stop ping from your Windows 10 VM to your Ubuntu VM by 
 <p>Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity
 </p>
 <p>
-<img src="https://github.com/user-attachments/assets/b95b0572-bacf-41fe-8185-6c4e1c6b2ecd" height="80%" width="80%"/>
+<img src="https://github.com/user-attachments/assets/17257960-ce6b-48f0-b5cd-a8194d8b361f" height="80%" width="80%"/>
 </p>
 
