@@ -20,6 +20,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
+- Install Wireshark
 - Observe ICMP Traffic
 - Observe SSH Traffic
 - Observe DHCP Traffic
@@ -33,14 +34,54 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h3>Install Wireshark</h3>
 <p>Within your Windows 10 Virtual Machine, download and install Wireshark from https://www.wireshark.org. This tool will be used to observe network traffic.</p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/608a835b-e055-4720-b67e-95c98314cb6a" height="80%" width="80%"/>
 </p>
 
-<br />
+<br/>
 <h3>Observe ICMP Traffic</h3>
 <p>
-Within your Windows 10 Virtual Machine, Install Wireshark
+Open Wireshark. Click "ethernet" and then click the blue shark fin at the top left corner to start capturing packets.
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/598557b9-43d3-4e26-a405-e1f7d2db33a1" height="80%" width="80%"/>
+</p>
+
+<br/>
+<p>
+Open Wireshark. Click "ethernet" and then click the blue shark fin at the top left corner to start capturing packets.
+</p>
+<p>
+<img src="https://github.com/user-attachments/assets/598557b9-43d3-4e26-a405-e1f7d2db33a1" height="80%" width="80%"/>
+</p>
+
+<br/>
+<p>
+Filter for ICMP traffic only
+</p>
+<p>
+<img src="https://github.com/user-attachments/assets/4f820759-cc61-4fa0-b20a-23e17b2e213b" height="80%" width="80%"/>
+</p>
+
+<br/>
+<p>
+Retrieve the private IP address of the Ubuntu VM.
+</p>
+<p>
+<img src="https://github.com/user-attachments/assets/26e7c864-d918-42e7-89b6-f4b628e24651" height="80%" width="80%"/>
+</p>
+
+<br>
+<p>
+Attempt to ping it from within the Windows 10 VM using Powershell.
+</p>
+<p>
+<img src="https://github.com/user-attachments/assets/aa96111a-e984-4d4c-942f-ecc680478019" height="80%" width="80%"/>
+</p>
+
+<br>
+<p>
+Observe ping requests and replies within WireShark
+</p>
+<p>
+<img src="https://github.com/user-attachments/assets/e09d325e-5021-4d76-95f2-ed3e10a3c0fc" height="80%" width="80%"/>
 </p>
